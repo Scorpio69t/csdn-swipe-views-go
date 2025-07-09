@@ -1,0 +1,8 @@
+{{ define "logs.html" }}
+<h2>访问记录</h2>
+<ul>
+    {{ range .Logs }}
+    <li>{{ .Timestamp }} - [{{ .Status }}] {{ .Message }}</li>
+    {{ end }}
+</ul>
+{{ end }}

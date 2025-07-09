@@ -1,0 +1,7 @@
+{{ define "index.html" }}
+<form method="POST" action="/articles">
+  <label for="csdnId">请输入 CSDN 用户名：</label>
+  <input type="text" name="csdnId" id="csdnId" required>
+  <button type="submit">获取文章</button>
+</form>
+{{ end }}
